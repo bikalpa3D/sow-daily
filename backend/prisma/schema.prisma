@@ -16,11 +16,16 @@ datasource db {
 
 
 model User {
-  id           Int      @id @default(autoincrement())
-  username     String   @unique
-  email        String   @unique
-  password     String
-  refreshToken String?
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id               Int      @id @default(autoincrement())
+  businessName     String   @unique
+  contactPerson    String
+  address          String
+  postalNumber     String
+  city             String
+  phoneNumber      String
+  email            String   @unique
+  password         String
+  refreshToken     String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 }
