@@ -59,16 +59,6 @@ async function languageSeeder() {
     { key: "footer.home", en: "Home", sv: "Hem" },
     { key: "footer.order", en: "Order", sv: "Beställ" },
     { key: "footer.contact", en: "Contact Us", sv: "Kontakta oss" },
-    {
-      key: "footer.copyright",
-      en: "All rights reserved",
-      sv: "Alla rättigheter förbehållna",
-    },
-    {
-      key: "footer.legal",
-      en: "© Lättfaktura, CRO no. 638537, 2025.",
-      sv: "© Lättfaktura, CRO nr. 638537, 2025.",
-    },
   ];
 
   for (const t of translations) {

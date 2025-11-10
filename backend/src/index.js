@@ -26,10 +26,12 @@ app.use(cookieParser());
 
 // Import routes
 import authRoutes from "./routes/auth.route.js";
+import languageRoutes from "./routes/language.routes.js";
 import { Port } from "./constant.js";
 
 // Use routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/languages", languageRoutes);
 
 function startServer() {
   app.listen(Port, () => {
